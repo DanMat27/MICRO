@@ -1,0 +1,7 @@
+all: pract2_1.exe
+
+pract2_1.exe: pract2_1.obj
+	tlink /v pract2_1
+
+pract2_1.obj: pract2_1.asm
+	tasm /zi pract2_1.asm,,pract2_1.lst
